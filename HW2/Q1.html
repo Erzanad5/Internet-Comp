@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    text-align: center;
+    background-color: red;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    transition: transform 5s;
+  }
+
+  img:hover {
+    width: 300px;
+	height: 300px;
+  }
+
+  /* Add a class for the second image */
+  .shrink-image {
+	width: 200px;
+    height: 200px;
+	transition: transform 5s;
+  }
+
+  .shrink-image:hover {
+	width: 100px;
+	height: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+    transition: text-decoration 0.3s, color 0.3s;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+</style>
+</head>
+<body>
+
+<img src="Mont_logo2.jpg" alt="Montclair Logo"/>
+<!-- Add the class to the second image -->
+<img src="Mont_logo.jpg" alt="Montclair Logo" class="shrink-image"/>
+
+<h2>Below you will find links to other Montclair State University websites:</h2>
+<p>MSU <a href="https://www.montclair.edu/">The best state university of New Jersey</a></p>
+<p>MIT <a href="https://www.mit.edu/">The best engineering college in Boston</a></p>
+<p>Princeton <a href="https://www.princeton.edu/">The best private college in New Jersey</a></p>
+
+</body>
+</html>

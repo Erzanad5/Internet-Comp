@@ -1,0 +1,78 @@
+h1
+{
+    text-shadow: 4px 4px 5px darkgrey;
+}
+a
+{
+    text-decoration-line: none;
+    color: grey;
+}
+p, ul
+{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    font-size: large;
+}
+footer
+{
+    position: sticky;
+    background-color: rgb(78, 76, 87);
+    bottom: 0;
+    width: 100%;
+}
+footer > p
+{
+    color: white;
+    font-size: small;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    margin: auto;
+}
+dd
+{
+    margin-bottom: 35px;
+}
+img
+{
+    width: 200px;
+    height: 200px;
+}
+.center
+{
+    text-align: center;
+}
+.logo
+{
+    height: 65px;
+    width: 60px;
+}
+div.description
+{
+    margin-left: 10%;
+}
+.hamburger
+{
+    display: none;
+    cursor: pointer;
+}
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media (max-width: 576px) {
+    .col-sm-6 {
+        width: 100%; /* Set the width of the columns to 100% on xs screens */
+        padding: 0; /* Remove any padding */
+    }
+    .hamburger{
+        display: block;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .circle {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(lightgreen,green);
+    border-radius: 150px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    box-shadow: 0px 25px 20px 10px rgb(70, 70, 70);
+    animation: moveCircle 10s linear infinite alternate; /* Animation settings */
+  }
+
+  @keyframes moveCircle {
+    transition: 10s;
+    0% {
+      left: 50%; /* Start from the center */
+      transform: translateX(-50%); /* Center horizontally */
+      box-shadow: 0px 25px 20px 10px rgb(70, 70, 70);
+      transition: box-shadow 4s ease-out;
+    }
+    25% {
+      left: 0; /* Move to the left */
+      transform: translateX(0);
+      box-shadow: -20px 25px 20px 10px rgb(70, 70, 70);
+      transition: box-shadow 4s ease-out;
+    }
+    50% {
+      left: 50%; /* Back to the center */
+      transform: translateX(-50%);
+      box-shadow: 0px 25px 20px 10px rgb(70, 70, 70);
+      transition: box-shadow 4s ease-out;
+    }
+    75% {
+      left: 100%; /* Move to the right */
+      transform: translateX(-100%);
+      box-shadow: 20px 25px 20px 10px rgb(70, 70, 70);
+      transition: box-shadow 4s ease-out;
+    }
+    100% {
+      left: 50%; /* Back to the center */
+      transform: translateX(-50%);
+      box-shadow: 0px 25px 20px 10px rgb(70, 70, 70);
+      transition: box-shadow 4s ease-out;
+    }
+  }
+</style>
+</head>
+<body>
+    <h1>This is Jane Doe's oscillation Ball.........</h1>
+  <div class="circle"></div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  table {
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  th, td {
+    border-width: 3px;
+    width: 60px;
+    padding: 8px;
+    transition: background-color 0.3s, font-size 0.3s, color 0.3s;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  tr:hover {
+    background-color: cyan;
+    font-weight: bold;
+  }
+
+  td:hover  {
+    color: red;
+    border-color: red;
+  }
+
+  tr:hover  {
+    font-size: 18px;
+  }
+
+  caption {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+</style>
+</head>
+<body>
+
+<table border="3" cellpadding="10" bordercolor="black">
+  <caption>My Favorite Fruits</caption>
+  <thead>
+    <tr>
+      <th>Fruit</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>$0.25</td>
+    </tr>
+    <tr>
+        <td>Orange</td>
+        <td>$0.50</td>
+      </tr>
+    <tr>
+      <td>Banana</td>
+      <td>$1.00</td>
+    </tr>
+    <tr>
+      <td>Pinapple</td>
+      <td>$2.00</td>
+    </tr>
+    <tr>
+        <td>Kiwi</td>
+        <td>$0.50</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <th>Total</th>
+          <th>$4.25</th>
+        </tr>
+      </tfoot>
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+<head>
+    <style>
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+    
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        select:focus,
+        textarea:focus {
+            background-color: yellow;
+            outline: none;
+            width: 200%;
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        input[type="text"]:hover,
+        input[type="password"]:hover,
+        select:hover,
+        textarea:hover {
+            background-color: cyan;
+            color: red;
+            font-weight: bold;
+            width: 200%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 150%;
+            padding: 5px;
+            border: 2px solid rgb(195, 193, 193);
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: rgb(203, 199, 199);
+            color: black;
+            border: rgb(107, 105, 105);
+            padding: 2px 2px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>E-mail Address:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr>
+        </table>
+        <br>
+    </form>
+</body>
+</html>
